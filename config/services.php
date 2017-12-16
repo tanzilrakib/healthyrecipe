@@ -36,8 +36,8 @@ return [
     ],
 
     'edamam' => [
-        'appId' => env('EDAMAM_APP_ID'),
-        'appKey' => env('EDAMAM_APP_KEY'),
+        'appId' => 'fcdb73ec',
+        'appKey' => '83b78a193a31dea537170663624efe43',
     ],
 
 ];
