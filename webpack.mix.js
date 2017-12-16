@@ -18,10 +18,12 @@ let mix = require('laravel-mix');
 mix.combine([
 			'resources/assets/js/jquery-3.2.1.min.js',
 			'resources/assets/js/semantic.min.js',
+			'resources/assets/js/scripts.js',
 			 ], 'public/js/app.js')
 
 	.combine([ 
 			'resources/assets/css/semantic.min.css',
+			'resources/assets/css/styles.css',
 			], 'public/css/app.css');
 
 
