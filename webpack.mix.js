@@ -21,7 +21,8 @@ mix.combine([
 			'resources/assets/js/scripts.js',
 			 ], 'public/js/app.js')
 
-	.combine([ 
+	.sass('resources/assets/sass/app.scss', 'css/app.css')
+	.combine(['css/app.css',
 			'resources/assets/css/semantic.min.css',
 			'resources/assets/css/styles.css',
 			], 'public/css/app.css');

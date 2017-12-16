@@ -1,9 +1,5 @@
-
-
   $('.ui.search')
-    .search({
-      {{-- source: content --}}
-    });
+    .search();
 
   $('.ui.dropdown')
     .dropdown();

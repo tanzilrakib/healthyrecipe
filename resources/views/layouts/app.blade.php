@@ -11,11 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}"> --}}
-    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
 
     <style type="text/css">
      
@@ -151,9 +150,8 @@
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
-  {{-- <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script> --}}
-  {{-- <script src="{{ asset('js/semantic.min.js') }}"></script> --}}
 
+  <script src="https://developer.edamam.com/attribution/badge.js"></script>
   <script>
 
   
