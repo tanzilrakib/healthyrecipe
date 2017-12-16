@@ -53,7 +53,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    // 'url' => env('APP_URL', 'http://localhost'),
+    'url' => 'https://mighty-retreat-51006.herokuapp.com/',
 
     /*
     |--------------------------------------------------------------------------
