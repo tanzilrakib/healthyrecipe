@@ -12,8 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}"> --}}
     <script src="https://developer.edamam.com/attribution/badge.js"></script>
 
     <style type="text/css">

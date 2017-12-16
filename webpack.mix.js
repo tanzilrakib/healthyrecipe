@@ -20,7 +20,7 @@ mix.combine([
 			'resources/assets/js/semantic.min.js',
 			 ], 'public/js/app.js')
 
-	.combine(['resources/assets/css/bootstrap.min.css', 
+	.combine([ 
 			'resources/assets/css/semantic.min.css',
 			], 'public/css/app.css');
 
