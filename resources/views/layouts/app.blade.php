@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/semantic.min.css') }}">
     <script src="https://developer.edamam.com/attribution/badge.js"></script>
@@ -192,10 +192,9 @@
 
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}"></script>
-  <script
-    src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-  <script src="{{ asset('js/semantic.min.js') }}"></script>
+  <script src="{{ mix('js/app.js') }}"></script>
+  {{-- <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script> --}}
+  {{-- <script src="{{ asset('js/semantic.min.js') }}"></script> --}}
 
   <script>
 

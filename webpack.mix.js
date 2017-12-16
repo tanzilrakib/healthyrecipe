@@ -14,7 +14,18 @@ let mix = require('laravel-mix');
 // mix.js('resources/assets/js/app.js', 'public/js')
 //    .sass('resources/assets/sass/app.scss', 'public/css');
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
-   .copy('node_modules/semantic-ui/dist/semantic.min.css','public/css/semantic.min.css')
-   .copy('node_modules/semantic-ui/dist/semantic.min.js','public/js/semantic.min.js');
+
+mix.combine([
+			'resources/assets/js/jquery-3.2.1.min.js',
+			'resources/assets/js/semantic.min.js',
+			 ], 'public/js/app.js')
+
+	.combine(['resources/assets/css/bootstrap.min.css', 
+			'resources/assets/css/semantic.min.css',
+			], 'public/css/app.css');
+
+
+// mix.js('resources/assets/js/app.js', 'public/js')
+//    .sass('resources/assets/sass/app.scss', 'public/css')
+//    .copy('node_modules/semantic-ui/dist/semantic.min.css','public/css/semantic.min.css')
+//    .copy('node_modules/semantic-ui/dist/semantic.min.js','public/js/semantic.min.js');
