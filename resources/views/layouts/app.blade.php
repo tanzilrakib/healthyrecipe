@@ -13,7 +13,7 @@
     <!-- Styles -->
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
 
     <style type="text/css">
@@ -149,7 +149,7 @@
 
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ mix('js/app.js') }}"></script>
 
   <script src="https://developer.edamam.com/attribution/badge.js"></script>
   <script>
