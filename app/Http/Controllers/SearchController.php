@@ -119,7 +119,7 @@ class SearchController extends Controller
 
         $toDelete = $user->recipes()->where('uri', '=', $uri)->first();
 
-        if(count($toDelete)>0){
+        if(isset($toDelete) && count($toDelete)>0){
             $toDelete->delete();
         } 
 
