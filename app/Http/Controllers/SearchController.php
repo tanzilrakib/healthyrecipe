@@ -120,9 +120,9 @@ class SearchController extends Controller
         $toDelete = $user->recipes()->where('uri', '=', $uri)->first();
 
         if(isset($toDelete)){
-            if(count($toDelete)>0){
+            // if(count($toDelete)>0){
                 $toDelete->delete();
-            }
+            // }
 
         } 
 
@@ -132,9 +132,9 @@ class SearchController extends Controller
 
                 $usedBefore = $user->recipes()->onlyTrashed()->where('uri', '=', $uri)->first();
                 if(isset($usedBefore)){
-                    if(count($usedBefore)>0){
+                    // if(count($usedBefore)>0){
                         $usedBefore->restore();
-                    }
+                    // }
                 }
                 else{
 
