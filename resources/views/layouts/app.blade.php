@@ -15,11 +15,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-
-    <style type="text/css">
-     
-
-    </style>
 </head>
 
 <body>
@@ -188,17 +183,6 @@
 @endif
 
 @yield('scripts')
-
-<div id="rSign"></div>
-<div id="revR"></div>
-
-<style>
-
-
-</style>
-
-
-
-
+   
 </body>
 </html>
