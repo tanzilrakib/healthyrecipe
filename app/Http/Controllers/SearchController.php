@@ -96,7 +96,7 @@ class SearchController extends Controller
         // dd($data);
         
         if(!Auth::guest()){
-            if(count($data->hits)>0){
+            if(count($data->hits)>0 && isset($bookedUris)){
                 foreach ($data->hits as $key => $value) {
                     foreach ($bookedUris as $booked) {
                         if($value->recipe->uri === $booked ){
