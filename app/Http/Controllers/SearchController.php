@@ -160,18 +160,22 @@ class SearchController extends Controller
 
         $savedUris = Auth::user()->recipes()->pluck('uri')->toArray();
 
+        if(count($savedUris)>0){
+            foreach ($savedUris as $b) {
+                $bookedUris[] = "https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23". $b;
+            }
 
-        foreach ($savedUris as $b) {
-            $bookedUris[] = "https://api.edamam.com/search?r=http://www.edamam.com/ontologies/edamam.owl%23". $b;
+            foreach ($bookedUris as $uri) {
+                 $req = $this->client->request('GET', $uri, ['verify' => false]);
+                 $apiRequests[] = json_decode($req->getBody())[0];
+            }
+
+            return view('saved')->with('data', $apiRequests);
         }
-
-        foreach ($bookedUris as $uri) {
-             $req = $this->client->request('GET', $uri, ['verify' => false]);
-             $apiRequests[] = json_decode($req->getBody())[0];
+        else{
+            $apiRequests = []; 
+            return view('saved')->with('data', $apiRequests);
         }
-
-        // dd($apiRequests);
-        return view('saved')->with('data', $apiRequests);
     }
 
 
