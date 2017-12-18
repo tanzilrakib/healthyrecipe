@@ -128,7 +128,7 @@ class SearchController extends Controller
             if(count($user->recipes()->get())<=16){
 
                 $usedBefore = $user->recipes()->onlyTrashed()->where('uri', '=', $uri)->first();
-                if(count($usedBefore)>0){
+                if(isset($usedBefore) && count($usedBefore)>0){
                     $usedBefore->restore();
                 }
                 else{
